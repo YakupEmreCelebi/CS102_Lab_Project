@@ -1,9 +1,9 @@
 import java.util.Random;
 
 public class Assignment_2_Collaboration {
-     public static int findMinimumOfArray(int [] intArray, int array_size){
+     public static int findMinimumOfArray(int [] intArray){
         int minimum = intArray[0];
-        for(int i=0; i<array_size; i++)
+        for(int i=0; i< intArray.length; i++)
         {
             if(intArray[i] <= minimum)
             {
@@ -13,9 +13,9 @@ public class Assignment_2_Collaboration {
         return minimum;
     }
 
-    public static int findMaximumOfArray(int [] intArray, int array_size){
+    public static int findMaximumOfArray(int [] intArray){
         int maximum = intArray[0];
-        for(int i=0; i<array_size; i++)
+        for(int i=0; i< intArray.length; i++)
         {
             if(intArray[i] >= maximum)
             {
