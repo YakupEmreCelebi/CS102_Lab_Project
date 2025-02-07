@@ -1,25 +1,22 @@
 import java.util.Random;
 
 public class Assignment_2_Collaboration {
+
      public static int findMinimumOfArray(int [] intArray){
         int minimum = intArray[0];
-        for(int i=0; i< intArray.length; i++)
-        {
-            if(intArray[i] <= minimum)
-            {
-                minimum = intArray[i];
-            }
-        }
+         for (int j : intArray) {
+             if (j <= minimum) {
+                 minimum = j;
+             }
+         }
         return minimum;
     }
-    
+
     public static int findMaximumOfArray(int [] intArray){
         int maximum = intArray[0];
-        for(int i=0; i< intArray.length; i++)
-        {
-            if(intArray[i] >= maximum)
-            {
-                maximum = intArray[i];
+        for (int j : intArray) {
+            if (j >= maximum) {
+                maximum = j;
             }
         }
         return maximum;
@@ -28,8 +25,7 @@ public class Assignment_2_Collaboration {
     //print out the difference between each element and average in an array
     public static void printDifferenceOfAvg (int[] arr) {
          int length = arr.length;
-         int sum = 0;
-         int avg;
+         int sum = 0, avg;
 
          for (int element : arr) {
              sum += element;
