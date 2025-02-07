@@ -44,6 +44,21 @@ public class Assignment_2_Collaboration {
             }
         }
     }
+    public static int findTheSumOfEvenNumbers (int [] anArray){
+        int sumOfEvenNumbers = 0;
+        for(int i = 0 ; i < anArray.length ; i = i+2){
+            sumOfEvenNumbers += anArray[i];
+        }
+        return sumOfEvenNumbers;
+    }
+    
+    public static int findTheSumOfOddNumbers (int [] anArray){
+        int sumOfOddNumbers = 0;
+        for(int i = 1 ; i < anArray.length ; i = i+2){
+            sumOfOddNumbers += anArray[i];
+        }
+        return sumOfOddNumbers;
+    }
 
     public static void main(String[] args) {
 
@@ -74,8 +89,8 @@ public class Assignment_2_Collaboration {
             } else if (operationNumber == 2) {
                 printDifferenceOfAvg(numbers);
             } else if (operationNumber == 3) {
-                // System.out.println("Sum of odd numbers: "+ findTheSumOfOddNumbers(numbers));
-                // System.out.println("Sum of even numbers: "+ findTheSumOfEvenNumbers(numbers));
+                System.out.println("Sum of odd numbers: "+ findTheSumOfOddNumbers(numbers));
+                System.out.println("Sum of even numbers: "+ findTheSumOfEvenNumbers(numbers));
             } else if (operationNumber == 0) {
                 scanner.close();
                 break;
