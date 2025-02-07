@@ -63,14 +63,13 @@ public class Assignment_2_Collaboration {
         }
 
         do {
-            System.out.println();
-            System.out.println(
-                    "    Choose the operation number! \n \n1. Find the minimum and maximum values in array. \n2. Display how each element of the array differs from the average. \n3. Find the sum of elements with odd- and even- numberede indexes. \n0. Exit.");
+            System.out.println("\n    Choose the operation number! \n \n1. Find the minimum and maximum values in array. \n2. Display how each element of the array differs from the average. \n3. Find the sum of elements with odd- and even- numberede indexes. \n0. Exit.");
             System.out.print("Enter a number: ");
+
             int operationNumber = scanner.nextInt();
-            System.out.println();
+
             if (operationNumber == 1) {
-                System.out.println("Maximum value in the array is " + findMaximumOfArray(numbers));
+                System.out.println("\nMaximum value in the array is " + findMaximumOfArray(numbers));
                 System.out.println("Minimum value in the array is " + findMinimumOfArray(numbers));
             } else if (operationNumber == 2) {
                 printDifferenceOfAvg(numbers);
