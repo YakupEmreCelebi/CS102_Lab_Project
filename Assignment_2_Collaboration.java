@@ -12,7 +12,7 @@ public class Assignment_2_Collaboration {
         }
         return minimum;
     }
-
+    
     public static int findMaximumOfArray(int [] intArray){
         int maximum = intArray[0];
         for(int i=0; i< intArray.length; i++)
@@ -24,6 +24,30 @@ public class Assignment_2_Collaboration {
         }
         return maximum;
     }
+
+    //print out the difference between each element and average in an array
+    public static void printDifferenceOfAvg (int[] arr) {
+         int length = arr.length;
+         int sum = 0;
+         int avg;
+
+         for (int element : arr) {
+             sum += element;
+         }
+
+         avg = sum / length;
+
+        System.out.print("{");
+        for (int i = 0; i < length; i++) {
+            int diff = arr[i] - avg;
+            if (i != length - 1) {
+                System.out.print(diff + ", ");
+            } else {
+                System.out.println(diff + "}");
+            }
+        }
+    }
+
     public static void main(String[] args) {
         int array_size = 100;
         int[] numbers = new int[array_size];
